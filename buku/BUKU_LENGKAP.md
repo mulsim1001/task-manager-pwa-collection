@@ -5,7 +5,7 @@
 
 **Tagline:** *"Marie Kondo untuk Aplikasi: Buang yang Ribet, Simpan yang Penting"*
 
-**Oleh:** [Author Name]  
+**Oleh:** [MulSIM + Replit Ai]  
 **Versi:** 1.0 Full Edition  
 **Halaman:** 350+ halaman  
 **Kata:** ~80,000 words
