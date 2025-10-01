@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+android/app/build/
+android/build/
+android/.gradle/
+android/*/build/
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Replit
+.replit
+.config/
+.cache/
+.upm/
+.local/
+replit.nix
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+tmp/
+logs/
+/tmp/
+
+# Environment & Credentials
+.env
+.env.local
+*.env
+data/
+attached_assets/*credentials*.json
+attached_assets/*service-account*.txt
+attached_assets/*taskmanager*.txt
+*private-key*
+
+# Gradle
+.gradle/
+gradle-wrapper.jar
+
+# Capacitor build assets (will be regenerated)
+android/app/src/main/assets/public/
+!android/app/src/main/assets/public/.gitkeep
