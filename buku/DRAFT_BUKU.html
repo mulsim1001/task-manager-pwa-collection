@@ -1,0 +1,1814 @@
+<h1 id="draft-buku-bikin-aplikasi-tanpa-jadi-programmer">📘 DRAFT BUKU:
+BIKIN APLIKASI TANPA JADI PROGRAMMER</h1>
+<p><strong>Panduan untuk Orang Sibuk yang Butuh Solusi, Bukan
+Teori</strong></p>
+<p><em>Cara Merencanakan Sistem Digital dari Nol - AI yang Coding, Anda
+yang Mikir</em></p>
+<p><strong>Tagline:</strong> <em>“Marie Kondo untuk Aplikasi: Buang yang
+Ribet, Simpan yang Penting”</em></p>
+<hr />
+<h2 id="daftar-isi">📑 DAFTAR ISI</h2>
+<h3 id="bagian-1-mindset-bab-1-3"><strong>BAGIAN 1: MINDSET (Bab
+1-3)</strong></h3>
+<ul>
+<li><strong>Bab 1:</strong> Mengapa Anda TIDAK Perlu Jadi
+Programmer</li>
+<li><strong>Bab 2:</strong> Kompleksitas itu Ilusi, Kesederhanaan itu
+Kemenangan</li>
+<li><strong>Bab 3:</strong> Skill yang Benar-Benar Anda Butuhkan</li>
+</ul>
+<h3 id="bagian-2-perencanaan-bab-4-7"><strong>BAGIAN 2: PERENCANAAN (Bab
+4-7)</strong></h3>
+<ul>
+<li><strong>Bab 4:</strong> Dari Masalah ke Solusi dalam 5 Langkah</li>
+<li><strong>Bab 5:</strong> Gambar Kotak-Kotak: Arsitektur untuk Manusia
+Biasa</li>
+<li><strong>Bab 6:</strong> Database Tanpa Pusing: Spreadsheet Sebagai
+Otak Aplikasi</li>
+<li><strong>Bab 7:</strong> Checklist Anti-Gagal: Validasi Ide Sebelum
+Coding</li>
+</ul>
+<h3 id="bagian-3-eksekusi-bab-8-12"><strong>BAGIAN 3: EKSEKUSI (Bab
+8-12)</strong></h3>
+<ul>
+<li><strong>Bab 8:</strong> Google Gratis: Sheets + Apps Script =
+Backend Instant</li>
+<li><strong>Bab 9:</strong> Studi Kasus: Task Manager dari Nol dalam 30
+Menit</li>
+<li><strong>Bab 10:</strong> CRUD: 4 Fungsi yang Bisa Solve 90%
+Masalah</li>
+<li><strong>Bab 11:</strong> Deploy ke Internet (Gratis, Tanpa
+Server)</li>
+<li><strong>Bab 12:</strong> Maintenance: Update Tanpa Coding</li>
+</ul>
+<h3 id="bagian-4-scale-up-bab-13-15"><strong>BAGIAN 4: SCALE UP (Bab
+13-15)</strong></h3>
+<ul>
+<li><strong>Bab 13:</strong> Dari 1 App ke 10 Apps dengan Template yang
+Sama</li>
+<li><strong>Bab 14:</strong> Multi-Database: Finance, Inventory, HR
+dalam Satu Sistem</li>
+<li><strong>Bab 15:</strong> Kapan Waktunya Hire Programmer (Hint: Nanti
+Banget)</li>
+</ul>
+<h3 id="bonus-templates"><strong>BONUS: TEMPLATES</strong></h3>
+<ul>
+<li>Template Task Manager</li>
+<li>Template Inventory/Stok</li>
+<li>Template Absensi</li>
+<li>Template Finance Tracker</li>
+</ul>
+<hr />
+<h2 id="outline-lengkap">📖 OUTLINE LENGKAP</h2>
+<hr />
+<h3 id="bab-1-mengapa-anda-tidak-perlu-jadi-programmer"><strong>BAB 1:
+MENGAPA ANDA TIDAK PERLU JADI PROGRAMMER</strong></h3>
+<p><strong>Opening Hook:</strong> &gt; “Anda tidak perlu tahu cara mesin
+mobil bekerja untuk bisa nyetir ke kantor.<br />
+&gt; Begitu juga aplikasi: Anda tidak perlu jadi programmer untuk punya
+sistem digital.”</p>
+<p><strong>Isi Bab:</strong> - Mitos: “Bikin aplikasi = harus bisa
+coding” - Realita: 90% orang butuh CRUD sederhana, bukan NASA rocket
+science - Bedanya “Builder” vs “Coder” (Anda adalah Builder) - Case
+study: 3 owner UMKM yang bikin app tanpa background IT</p>
+<p><strong>Takeaway:</strong> - Skill yang dibutuhkan: Problem solving,
+bukan sintaks Python - Tools sudah ada (gratis!), tinggal pakai - Fokus
+ke: “Apa masalahnya?” bukan “Pakai framework apa?”</p>
+<hr />
+<h3
+id="bab-2-kompleksitas-itu-ilusi-kesederhanaan-itu-kemenangan"><strong>BAB
+2: KOMPLEKSITAS ITU ILUSI, KESEDERHANAAN ITU KEMENANGAN</strong></h3>
+<p><strong>Opening Hook:</strong> &gt; “Aplikasi terbaik bukan yang
+paling canggih, tapi yang paling DIPAKAI.”</p>
+<p><strong>Isi Bab:</strong> - Filosofi Minimalis: Less is More -
+Mengapa 2 file HTML bisa mengalahkan React + Node + MongoDB -
+Perbandingan: - <strong>Aplikasi Kompleks:</strong> 50+ files, butuh
+server, mahal maintenance → user bingung - <strong>Aplikasi
+Simple:</strong> 2 files, Google Sheets, gratis → user happy - Prinsip
+4-Files Champion: HTML + Sheets + Apps Script = Done</p>
+<p><strong>Studi Kasus Real:</strong> - Bengkel mobil: Pakai spreadsheet
++ form → tracking 500 customer - Warung makan: Apps Script + Sheets →
+inventory otomatis update - Guru SD: Google Forms + Sheets → nilai siswa
+200 anak</p>
+<p><strong>Takeaway:</strong> - Start with spreadsheet mindset, bukan
+database mindset - Kalau bisa 2 files, jangan pakai 200 files - User
+peduli hasil, bukan teknologi di belakangnya</p>
+<hr />
+<h3 id="bab-3-skill-yang-benar-benar-anda-butuhkan"><strong>BAB 3: SKILL
+YANG BENAR-BENAR ANDA BUTUHKAN</strong></h3>
+<p><strong>3 Skill Inti:</strong></p>
+<p><strong>1. Problem Breakdown (Pecah Masalah)</strong> - Contoh:
+“Bengkel saya kacau” - Pecah jadi: Pelanggan siapa? Motor apa? Kapan
+selesai? Berapa bayar? - Dari 1 masalah besar → 4 data kecil →
+beres!</p>
+<p><strong>2. Data Thinking (Pikir Data)</strong> - Setiap masalah =
+data yang belum tertata - Template berpikir: - Masalah: Lupa deadline
+task - Data: Nama task, PIC, Tanggal deadline, Status - Solusi: Table
+dengan 4 kolom itu!</p>
+<p><strong>3. Prototype Sketching (Gambar di Kertas)</strong> - Kotak =
+screen - Arrow = navigasi - Tidak perlu bagus, yang penting jelas -
+Contoh: Login → Dashboard → Add Task → Done (4 kotak aja!)</p>
+<p><strong>Bonus Skill:</strong> - Google-fu: Cari tutorial dengan
+keyword yang tepat - Copy-Paste Strategis: Modifikasi code orang lain
+(legal &amp; smart!) - Prompting AI: Cara ngomong ke ChatGPT/Claude agar
+jawab yang bener</p>
+<p><strong>Exercise:</strong> - Gambar aplikasi impian Anda di kertas
+(15 menit) - List 5 data yang perlu disimpan - Tulis user flow: User
+datang → User ngapain → User pergi</p>
+<p><strong>Takeaway:</strong> - Koding itu 10%, planning itu 90% - Kalau
+planning jelas, AI bisa coding-in dalam hitungan menit - Skill ini bisa
+dipelajari dalam 1 hari, bukan 4 tahun kuliah</p>
+<hr />
+<h3 id="bab-4-dari-masalah-ke-solusi-dalam-5-langkah"><strong>BAB 4:
+DARI MASALAH KE SOLUSI DALAM 5 LANGKAH</strong></h3>
+<p><strong>Framework “5-Step App Builder”:</strong></p>
+<p><strong>Step 1: Problem Statement (1 Kalimat)</strong> - Contoh
+BURUK: “Perusahaan saya tidak efisien” - Contoh BAGUS: “Karyawan lupa
+task karena pakai WhatsApp grup (500 chat/hari)”</p>
+<p><strong>Step 2: User Flow (3-5 Langkah)</strong> - User login → Lihat
+daftar task → Klik task → Tandai selesai → Logout - Jangan lebih dari 5
+langkah, kalau kebanyakan = over-engineering</p>
+<p><strong>Step 3: Data Structure (Tabel Spreadsheet)</strong> - Buka
+Google Sheets, buat header: - Task: ID, Nama Task, PIC, Deadline,
+Status, Catatan - User: Username, Password, Role - Isi 3-5 row contoh
+data (dummy ok, asal realistis)</p>
+<p><strong>Step 4: UI Sketching (Gambar 3 Screen)</strong> - Screen 1:
+Login (username + password + button) - Screen 2: Dashboard (list task +
+button add) - Screen 3: Add Task (form + button save)</p>
+<p><strong>Step 5: Validation Checklist</strong> - [ ] Apakah solve
+masalah utama? - [ ] Apakah user flow &lt; 5 langkah? - [ ] Apakah data
+bisa muat di 1 spreadsheet? - [ ] Apakah bisa dijelaskan ke nenek dalam
+30 detik?</p>
+<p><strong>Contoh Penerapan:</strong> - Masalah: Owner kos bingung
+tracking pembayaran 20 kamar - User Flow: Login → Lihat daftar kamar →
+Klik kamar → Input bayar → Update status - Data: Kamar (Nomor, Penghuni,
+Harga, Status Bayar, Tanggal Bayar) - UI: 3 screen (Login, Dashboard
+kamar, Form bayar) - Validation: ✅ Semua yes? Gas build!</p>
+<p><strong>Exercise:</strong> - Pilih 1 masalah di hidup Anda
+(kantor/rumah/usaha) - Jalankan 5 langkah di atas (30 menit) - Share ke
+teman, minta feedback: “Apa yang kurang jelas?”</p>
+<p><strong>Takeaway:</strong> - 30 menit planning = hemat 30 jam coding
+salah arah - Kalau bingung di step 2-3, berarti masalahnya belum jelas
+(balik ke step 1) - Validation di step 5 = filter ide bagus vs ide
+mubazir</p>
+<hr />
+<h3
+id="bab-5-gambar-kotak-kotak-arsitektur-untuk-manusia-biasa"><strong>BAB
+5: GAMBAR KOTAK-KOTAK: ARSITEKTUR UNTUK MANUSIA BIASA</strong></h3>
+<p><strong>Mengapa Arsitektur Itu Penting?</strong> - Tanpa peta: coding
+asal-asalan, bug dimana-mana, bingung sendiri - Dengan peta: tau persis
+komponen apa, ngapain, nyambung kemana</p>
+<p><strong>3 Kotak Ajaib Setiap Aplikasi:</strong></p>
+<pre><code>┌─────────────┐
+│  FRONTEND   │ ← Yang user lihat (HTML)
+│  (Tampilan) │
+└──────┬──────┘
+       │ (Kirim data)
+       ▼
+┌─────────────┐
+│   BACKEND   │ ← Logic &amp; keamanan (Apps Script)
+│   (Otak)    │
+└──────┬──────┘
+       │ (Simpan/ambil data)
+       ▼
+┌─────────────┐
+│  DATABASE   │ ← Penyimpanan (Google Sheets)
+│  (Memori)   │
+└─────────────┘</code></pre>
+<p><strong>Template Arsitektur Task Manager:</strong></p>
+<ol type="1">
+<li><strong>Frontend (2 File HTML)</strong>
+<ul>
+<li><code>login.html</code>: Form username + password</li>
+<li><code>dashboard.html</code>: List task + button add/edit/delete</li>
+</ul></li>
+<li><strong>Backend (1 Apps Script)</strong>
+<ul>
+<li>Function: <code>validateUser()</code>, <code>getTasks()</code>,
+<code>addTask()</code>, <code>completeTask()</code>,
+<code>deleteTask()</code></li>
+<li>Komunikasi: POST request dari frontend</li>
+</ul></li>
+<li><strong>Database (1 Google Sheets)</strong>
+<ul>
+<li>Tab 1 (<code>user</code>): Username, Password, Role</li>
+<li>Tab 2 (<code>db01</code>): ID Task, Nama, PIC, Status,
+Timestamp</li>
+</ul></li>
+</ol>
+<p><strong>Cara Gambar Arsitektur (Pen &amp; Paper):</strong> 1. Gambar
+3 kotak vertikal (Frontend, Backend, Database) 2. Tambah panah data
+flow: - User klik button → POST ke Backend → Backend cek Sheets → Balik
+ke Frontend 3. Tulis fungsi di setiap kotak: - Frontend: Tampil, Input -
+Backend: Validasi, CRUD - Database: Simpan</p>
+<p><strong>Contoh Kasus Lain:</strong></p>
+<p><strong>A. Inventory Toko</strong></p>
+<pre><code>Frontend: 
+- List barang (foto, nama, stok)
+- Form tambah barang
+
+Backend:
+- addItem(), updateStock(), getItems()
+
+Database:
+- Tab `inventory`: ID, Nama, Stok, Harga, Foto URL</code></pre>
+<p><strong>B. Absensi Karyawan</strong></p>
+<pre><code>Frontend:
+- Tombol &quot;Check In&quot; / &quot;Check Out&quot;
+- List history absensi
+
+Backend:
+- recordAttendance(), getHistory()
+
+Database:
+- Tab `attendance`: ID, Nama, Tanggal, Jam Masuk, Jam Keluar</code></pre>
+<p><strong>Exercise:</strong> - Pilih 1 ide aplikasi Anda - Gambar 3
+kotak (Frontend, Backend, Database) - List 3-5 function di Backend -
+List kolom-kolom di Database</p>
+<p><strong>Takeaway:</strong> - Arsitektur = peta jalan, bukan penjara -
+Kalau bisa dijelaskan dalam 3 kotak, berarti cukup simple - Save gambar
+ini, nanti kasih ke AI untuk generate code</p>
+<hr />
+<h3
+id="bab-6-database-tanpa-pusing-spreadsheet-sebagai-otak-aplikasi"><strong>BAB
+6: DATABASE TANPA PUSING: SPREADSHEET SEBAGAI OTAK
+APLIKASI</strong></h3>
+<p><strong>Mengapa Google Sheets = Database Terbaik untuk
+Pemula?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Google Sheets</th>
+<th>Database Tradisional (MySQL/PostgreSQL)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gratis selamanya</td>
+<td>Butuh hosting berbayar</td>
+</tr>
+<tr>
+<td>Bisa diedit manual</td>
+<td>Harus pakai SQL command</td>
+</tr>
+<tr>
+<td>Familiar (kayak Excel)</td>
+<td>Perlu belajar syntax baru</td>
+</tr>
+<tr>
+<td>Backup otomatis</td>
+<td>Harus setup sendiri</td>
+</tr>
+<tr>
+<td>Bisa dibuka di HP</td>
+<td>Perlu tool khusus</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Struktur Database yang Benar:</strong></p>
+<p><strong>1. Gunakan Multiple Tabs (Sheets) untuk Tabel
+Berbeda</strong></p>
+<pre><code>Sheet 1: user (Data login)
+Sheet 2: db01 (Data task)
+Sheet 3: logs (Optional: tracking aktivitas)</code></pre>
+<p><strong>2. Naming Convention</strong> - Tab: lowercase, singkat
+(<code>user</code>, <code>db01</code>, bukan
+<code>User Data Task Manager v2</code>) - Kolom: camelCase
+(<code>itemName</code>, bukan <code>Item Name</code>) - ID: Prefix +
+Number + Huruf (<code>001AB</code>, <code>TR0012</code>)</p>
+<p><strong>3. Data Types yang Support</strong> - Text: Nama, alamat,
+catatan - Number: Harga, qty, score - Date: Timestamp ISO format
+<code>2025-09-30T10:30:00</code> - Boolean: Pakai text
+(<code>true</code>/<code>false</code> atau
+<code>yes</code>/<code>no</code>)</p>
+<p><strong>4. Status Management</strong> Untuk kolom
+<code>status</code>, pilih nilai yang limitied: - Task:
+<code>onProgress</code>, <code>overdue</code>, <code>done</code> (jangan
+sampai ada typo!) - Payment: <code>pending</code>, <code>paid</code>,
+<code>failed</code> - Approval: <code>waiting</code>,
+<code>approved</code>, <code>rejected</code></p>
+<p><strong>Template Database Task Manager:</strong></p>
+<p><strong>Tab: user</strong> | username | password | role | created |
+|———-|———-|——|———| | admin | admin123 | admin | 2025-09-30 | | staff1 |
+pass1 | user | 2025-09-30 |</p>
+<p><strong>Tab: db01</strong> | id | itemName | pic | status | tsCreated
+| tsCompleted | completionNote | |—-|———-|—–|——–|———–|————-|—————-| |
+001AB | Meeting | admin | done | 2025-09-30T10:00 | 2025-09-30T15:00 |
+Selesai tepat waktu |</p>
+<p><strong>Tab: logs</strong> (Bonus) | timestamp | username | action |
+details | |———–|———-|——–|———| | 2025-09-30T10:30 | admin | login |
+Success | | 2025-09-30T10:31 | admin | addTask | Task: Meeting |</p>
+<p><strong>Validation Rules:</strong> 1. <strong>ID harus
+unique</strong> (generate di Backend, jangan manual) 2. <strong>Required
+fields</strong> tidak boleh kosong (validasi di Frontend) 3.
+<strong>Status harus dari list</strong> (dropdown validation di Sheets)
+4. <strong>Timestamp otomatis</strong> (generate di Backend pakai
+<code>new Date()</code>)</p>
+<p><strong>Tips Pro:</strong> - Freeze header row (View → Freeze → 1
+row) - Data validation di kolom status (Data → Data validation → List) -
+Conditional formatting untuk visualisasi: - Status <code>done</code> →
+hijau - Status <code>overdue</code> → merah - Status
+<code>onProgress</code> → kuning</p>
+<p><strong>Exercise:</strong> - Buat Google Sheets baru - Setup 2 tabs:
+<code>user</code> dan <code>tasks</code> - Isi 5 dummy data di
+masing-masing tab - Test edit manual, pastikan understand struktur</p>
+<p><strong>Takeaway:</strong> - Database = spreadsheet yang disiplin
+strukturnya - Multiple tabs = multiple tables (relasi sederhana) -
+Sheets bisa handle 10 juta cell (cukup untuk 100rb+ data!)</p>
+<hr />
+<h3
+id="bab-7-checklist-anti-gagal-validasi-ide-sebelum-coding"><strong>BAB
+7: CHECKLIST ANTI-GAGAL: VALIDASI IDE SEBELUM CODING</strong></h3>
+<p><strong>Pre-Coding Checklist (30 Menit):</strong></p>
+<p><strong>✅ Problem Clarity</strong> - [ ] Bisa jelaskan masalah dalam
+1 kalimat? - [ ] Ada user yang confirm ini emang masalah real? - [ ]
+Pernah pakai solusi manual (Excel/WhatsApp) dan gagal?</p>
+<p><strong>✅ Scope Definition</strong> - [ ] User flow &lt; 5 langkah?
+- [ ] Screen count &lt; 5 halaman? - [ ] Database table &lt; 5 tabs?</p>
+<p><strong>✅ Data Readiness</strong> - [ ] Sudah buat dummy data di
+Sheets? - [ ] Struktur data bisa dijelaskan ke orang lain? - [ ] Tidak
+ada kolom “lain-lain” atau “misc”? (red flag!)</p>
+<p><strong>✅ UI Sketch</strong> - [ ] Sudah gambar 3 screen utama di
+kertas? - [ ] Orang lain bisa understand flow-nya? - [ ] Tidak ada
+button “Advanced Settings”? (YAGNI!)</p>
+<p><strong>✅ Technical Feasibility</strong> - [ ] Pakai Google Sheets
+cukup? (bukan perlu Firebase?) - [ ] Pakai HTML + JS cukup? (bukan perlu
+React?) - [ ] Gratis selamanya? (bukan butuh server $50/bulan?)</p>
+<p><strong>Red Flags yang Harus Dihindari:</strong></p>
+<p>🚩 <strong>Feature Creep</strong> - “Nanti bisa export PDF, kan?” -
+“Tambahin dashboard grafik, dong?” - <strong>Solution:</strong> Catat di
+list “V2 Nanti”, fokus V1 dulu!</p>
+<p>🚩 <strong>Over-Engineering</strong> - “Pakai framework apa? React
+atau Vue?” - “Database-nya pakai PostgreSQL atau MongoDB?” -
+<strong>Solution:</strong> Kalau Google Sheets cukup, ya Sheets aja!</p>
+<p>🚩 <strong>Unclear User</strong> - “Ini aplikasi untuk siapa?” -
+“Entah, kayaknya general aja deh…” - <strong>Solution:</strong>
+Specific! “Untuk owner bengkel motor dengan 1-5 mekanik”</p>
+<p>🚩 <strong>No MVP</strong> - “Harus sempurna dari awal!” - “Belum
+bisa demo, baru 80% jadi” - <strong>Solution:</strong> Launch 50%
+working, iterate cepat!</p>
+<p><strong>Validation Techniques:</strong></p>
+<p><strong>1. Paper Prototype Test</strong> - Print UI sketch - Kasih ke
+calon user - Suruh “pakai” dengan jari (pura-pura klik) - Catat: Di mana
+mereka bingung?</p>
+<p><strong>2. Spreadsheet Simulation</strong> - Isi Google Sheets dengan
+20-30 dummy data - Coba filter, sort, search manual - Kalau manual aja
+ribet, berarti struktur salah</p>
+<p><strong>3. Explain to Grandma</strong> - Jelaskan aplikasi Anda ke
+orang non-IT - Kalau mereka nggak paham dalam 60 detik, redesign!</p>
+<p><strong>Exercise: Full Validation Session (60 Menit)</strong></p>
+<ol type="1">
+<li><strong>Tulis Problem Statement</strong> (10 menit)</li>
+<li><strong>Gambar UI di kertas</strong> (15 menit)</li>
+<li><strong>Buat struktur Sheets + dummy data</strong> (20 menit)</li>
+<li><strong>Paper prototype test dengan teman</strong> (10 menit)</li>
+<li><strong>Revisi berdasarkan feedback</strong> (5 menit)</li>
+</ol>
+<p><strong>Takeaway:</strong> - 1 jam validation = hemat 10 jam revisi
+nanti - Kalau gagal di paper prototype, akan gagal di code juga - Red
+flag adalah teman, bukan musuh (early warning system!)</p>
+<hr />
+<h3
+id="bab-8-google-gratis-sheets-apps-script-backend-instant"><strong>BAB
+8: GOOGLE GRATIS: SHEETS + APPS SCRIPT = BACKEND INSTANT</strong></h3>
+<p><strong>Kenalan dengan Google Apps Script:</strong></p>
+<p><strong>Apa itu Apps Script?</strong> - JavaScript yang jalan di
+server Google (gratis!) - Punya akses penuh ke Google Sheets, Gmail,
+Calendar, Drive - Bisa di-deploy sebagai Web App (API instant!)</p>
+<p><strong>Keuntungan Pakai Apps Script:</strong> -
+<strong>Gratis:</strong> 20,000 calls/day (cukup untuk 1000+ user) -
+<strong>Serverless:</strong> Tidak perlu sewa VPS/server -
+<strong>Auto-scale:</strong> Google yang handle traffic spike -
+<strong>Built-in Auth:</strong> Integrasi Google Account langsung -
+<strong>5 Menit Setup:</strong> Tidak perlu install apa-apa</p>
+<p><strong>Setup Pertama Kali (5 Menit):</strong></p>
+<ol type="1">
+<li>Buka Google Sheets → Extensions → Apps Script</li>
+<li>Hapus code default, paste template:</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">doGet</span>(e) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> ContentService<span class="op">.</span><span class="fu">createTextOutput</span>(<span class="st">&#39;API is running! ✅&#39;</span>)<span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">doPost</span>(e) {</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(e<span class="op">.</span><span class="at">postData</span><span class="op">.</span><span class="at">contents</span>)<span class="op">;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> ContentService</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">createTextOutput</span>(<span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">success</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">data</span><span class="op">:</span> data</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    }))</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">setMimeType</span>(ContentService<span class="op">.</span><span class="at">MimeType</span><span class="op">.</span><span class="at">JSON</span>)<span class="op">;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<ol start="3" type="1">
+<li>Deploy → New deployment → Web app → Anyone → Deploy</li>
+<li>Copy URL:
+<code>https://script.google.com/macros/s/ABC.../exec</code></li>
+<li>Test di browser → Muncul “API is running! ✅”</li>
+</ol>
+<p><strong>Struktur Code Apps Script:</strong></p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ========== HELPERS ==========</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getSheet</span>(name) {</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> SpreadsheetApp<span class="op">.</span><span class="fu">getActiveSpreadsheet</span>()</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">getSheetByName</span>(name)<span class="op">;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">success</span>(data) {</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> ContentService</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">createTextOutput</span>(<span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">success</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">data</span><span class="op">:</span> data</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    }))</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">setMimeType</span>(ContentService<span class="op">.</span><span class="at">MimeType</span><span class="op">.</span><span class="at">JSON</span>)<span class="op">;</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">error</span>(message) {</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> ContentService</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">createTextOutput</span>(<span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>      <span class="dt">success</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>      <span class="dt">error</span><span class="op">:</span> message</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    }))</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">setMimeType</span>(ContentService<span class="op">.</span><span class="at">MimeType</span><span class="op">.</span><span class="at">JSON</span>)<span class="op">;</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="co">// ========== AUTH ==========</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">validateUser</span>(username<span class="op">,</span> password) {</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;user&#39;</span>)<span class="op">;</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> data<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (data[i][<span class="dv">0</span>] <span class="op">===</span> username <span class="op">&amp;&amp;</span> data[i][<span class="dv">1</span>] <span class="op">===</span> password) {</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="co">// ========== CRUD ==========</span></span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getTasks</span>() {</span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;db01&#39;</span>)<span class="op">;</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getRange</span>(<span class="st">&#39;A2:G&#39;</span>)<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> data</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(row <span class="kw">=&gt;</span> row[<span class="dv">0</span>])</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">map</span>(row <span class="kw">=&gt;</span> ({</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>      <span class="dt">id</span><span class="op">:</span> row[<span class="dv">0</span>]<span class="op">,</span></span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>      <span class="dt">itemName</span><span class="op">:</span> row[<span class="dv">1</span>]<span class="op">,</span></span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>      <span class="dt">pic</span><span class="op">:</span> row[<span class="dv">2</span>]<span class="op">,</span></span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>      <span class="dt">status</span><span class="op">:</span> row[<span class="dv">3</span>]<span class="op">,</span></span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tsCreated</span><span class="op">:</span> row[<span class="dv">4</span>]</span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>    }))<span class="op">;</span></span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">addTask</span>(itemName<span class="op">,</span> username) {</span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;db01&#39;</span>)<span class="op">;</span></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> id <span class="op">=</span> <span class="fu">generateId</span>()<span class="op">;</span></span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> now <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">.</span><span class="fu">toISOString</span>()<span class="op">;</span></span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>  sheet<span class="op">.</span><span class="fu">appendRow</span>([id<span class="op">,</span> itemName<span class="op">,</span> username<span class="op">,</span> <span class="st">&#39;onProgress&#39;</span><span class="op">,</span> now<span class="op">,</span> <span class="st">&#39;&#39;</span><span class="op">,</span> <span class="st">&#39;&#39;</span>])<span class="op">;</span></span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> { id<span class="op">,</span> itemName<span class="op">,</span> <span class="dt">pic</span><span class="op">:</span> username<span class="op">,</span> <span class="dt">status</span><span class="op">:</span> <span class="st">&#39;onProgress&#39;</span> }<span class="op">;</span></span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a><span class="co">// ========== MAIN ENDPOINT ==========</span></span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">doPost</span>(e) {</span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> params <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(e<span class="op">.</span><span class="at">postData</span><span class="op">.</span><span class="at">contents</span>)<span class="op">;</span></span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="fu">validateUser</span>(params<span class="op">.</span><span class="at">username</span><span class="op">,</span> params<span class="op">.</span><span class="at">password</span>)) {</span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Invalid credentials&#39;</span>)<span class="op">;</span></span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a>    <span class="cf">switch</span>(params<span class="op">.</span><span class="at">action</span>) {</span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> <span class="st">&#39;login&#39;</span><span class="op">:</span></span>
+<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">success</span>({ <span class="dt">message</span><span class="op">:</span> <span class="st">&#39;Login success&#39;</span> })<span class="op">;</span></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> <span class="st">&#39;getTasks&#39;</span><span class="op">:</span></span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">getTasks</span>())<span class="op">;</span></span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> <span class="st">&#39;addTask&#39;</span><span class="op">:</span></span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">addTask</span>(params<span class="op">.</span><span class="at">itemName</span><span class="op">,</span> params<span class="op">.</span><span class="at">username</span>))<span class="op">;</span></span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a>      <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Unknown action&#39;</span>)<span class="op">;</span></span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (err) {</span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">error</span>(err<span class="op">.</span><span class="fu">toString</span>())<span class="op">;</span></span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Pattern yang Harus Dipahami:</strong></p>
+<p><strong>1. Read Data (SELECT)</strong></p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;user&#39;</span>)<span class="op">;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">// data = [[header...], [row1...], [row2...]]</span></span></code></pre></div>
+<p><strong>2. Write Data (INSERT)</strong></p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sheet<span class="op">.</span><span class="fu">appendRow</span>([<span class="st">&#39;ID123&#39;</span><span class="op">,</span> <span class="st">&#39;Task Name&#39;</span><span class="op">,</span> <span class="st">&#39;John&#39;</span><span class="op">,</span> <span class="st">&#39;onProgress&#39;</span>])<span class="op">;</span></span></code></pre></div>
+<p><strong>3. Update Data (UPDATE)</strong></p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sheet<span class="op">.</span><span class="fu">getRange</span>(rowNumber<span class="op">,</span> colNumber)<span class="op">.</span><span class="fu">setValue</span>(<span class="st">&#39;newValue&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<p><strong>4. Delete Data (DELETE)</strong></p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>sheet<span class="op">.</span><span class="fu">deleteRow</span>(rowNumber)<span class="op">;</span></span></code></pre></div>
+<p><strong>Quota &amp; Limits:</strong> - 20,000 URL fetches/day
+(request ke API) - 6 menit/execution (timeout) - 50 MB response size -
+<strong>Kesimpulan:</strong> Cukup untuk 1000+ daily active users!</p>
+<p><strong>Exercise:</strong> 1. Buat Google Sheets baru dengan tab
+<code>user</code> 2. Setup Apps Script dengan code di atas 3. Deploy
+sebagai Web App 4. Test via browser (GET) 5. Test via Postman/curl
+(POST)</p>
+<p><strong>Takeaway:</strong> - Apps Script = backend gratis tanpa
+server - Belajar 5 pattern (read, write, update, delete, auth) = unlock
+90% use case - Deploy dalam 5 menit, not 5 days!</p>
+<hr />
+<h3
+id="bab-9-studi-kasus-task-manager-dari-nol-dalam-30-menit"><strong>BAB
+9: STUDI KASUS: TASK MANAGER DARI NOL DALAM 30 MENIT</strong></h3>
+<p><strong>Full Timeline Build:</strong></p>
+<p><strong>[Menit 0-10] Planning &amp; Setup</strong> 1. Buat Google
+Sheets: “Task Manager Database” 2. Setup 2 tabs: - <code>user</code>:
+username, password, role - <code>db01</code>: id, itemName, pic, status,
+tsCreated, tsCompleted, completionNote 3. Isi dummy data 4 user + 3 task
+4. Freeze header row + data validation status</p>
+<p><strong>[Menit 10-15] Backend (Apps Script)</strong> 1. Extensions →
+Apps Script 2. Copy-paste template code (dari Bab 8) 3. Save + Deploy as
+Web App 4. Test GET endpoint di browser 5. Copy URL untuk frontend</p>
+<p><strong>[Menit 15-25] Frontend (login.html)</strong> 1. Buat file
+<code>login.html</code> 2. Structure: - Form: username + password input
+- Button: Login - Error div (hidden default) 3. JavaScript: - Fetch
+API_URL dengan POST - Action: “login” - Success: Simpan user ke
+sessionStorage, redirect ke dashboard - Error: Tampilkan pesan</p>
+<p><strong>[Menit 25-30] Frontend (dashboard.html)</strong> 1. Buat file
+<code>dashboard.html</code> 2. Structure: - Header: User info + Logout
+button - Form tambah task (hidden default) - Table list tasks 3.
+JavaScript: - Load tasks on page load - Add task function - Complete
+task function - Delete task function - Auto refresh every 30s</p>
+<p><strong>[Menit 30] Testing &amp; Deploy</strong> 1. Test login dengan
+user dummy 2. Test CRUD (add, complete, delete) 3. Upload ke Netlify
+(drag &amp; drop folder) 4. Done! 🎉</p>
+<p><strong>Code Snippet Penting:</strong></p>
+<p><strong>login.html (Core Logic)</strong></p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> API_URL <span class="op">=</span> <span class="st">&#39;YOUR_APPS_SCRIPT_URL&#39;</span><span class="op">;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>form<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&#39;submit&#39;</span><span class="op">,</span> <span class="kw">async</span> (e) <span class="kw">=&gt;</span> {</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  e<span class="op">.</span><span class="fu">preventDefault</span>()<span class="op">;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> username <span class="op">=</span> usernameInput<span class="op">.</span><span class="at">value</span><span class="op">;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> password <span class="op">=</span> passwordInput<span class="op">.</span><span class="at">value</span><span class="op">;</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;login&#39;</span><span class="op">,</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">username</span><span class="op">:</span> username<span class="op">,</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">password</span><span class="op">:</span> password</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (result<span class="op">.</span><span class="at">success</span>) {</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>    sessionStorage<span class="op">.</span><span class="fu">setItem</span>(<span class="st">&#39;user&#39;</span><span class="op">,</span> username)<span class="op">;</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>    sessionStorage<span class="op">.</span><span class="fu">setItem</span>(<span class="st">&#39;pass&#39;</span><span class="op">,</span> password)<span class="op">;</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">window</span><span class="op">.</span><span class="at">location</span><span class="op">.</span><span class="at">href</span> <span class="op">=</span> <span class="st">&#39;dashboard.html&#39;</span><span class="op">;</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">showError</span>(<span class="st">&#39;Login gagal!&#39;</span>)<span class="op">;</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code></pre></div>
+<p><strong>dashboard.html (Load Tasks)</strong></p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">loadTasks</span>() {</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;getTasks&#39;</span><span class="op">,</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (result<span class="op">.</span><span class="at">success</span>) {</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">renderTasks</span>(result<span class="op">.</span><span class="at">data</span>)<span class="op">;</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">renderTasks</span>(tasks) {</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> html <span class="op">=</span> tasks<span class="op">.</span><span class="fu">map</span>(task <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;tr&gt;</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;td&gt;</span><span class="sc">${</span>task<span class="op">.</span><span class="at">itemName</span><span class="sc">}</span><span class="vs">&lt;/td&gt;</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;td&gt;</span><span class="sc">${</span>task<span class="op">.</span><span class="at">pic</span><span class="sc">}</span><span class="vs">&lt;/td&gt;</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;td class=&quot;status-</span><span class="sc">${</span>task<span class="op">.</span><span class="at">status</span><span class="sc">}</span><span class="vs">&quot;&gt;</span><span class="sc">${</span>task<span class="op">.</span><span class="at">status</span><span class="sc">}</span><span class="vs">&lt;/td&gt;</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;td&gt;</span><span class="sc">${</span><span class="fu">formatDate</span>(task<span class="op">.</span><span class="at">tsCreated</span>)<span class="sc">}</span><span class="vs">&lt;/td&gt;</span></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;td&gt;</span></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;button onclick=&quot;completeTask(&#39;</span><span class="sc">${</span>task<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">&#39;)&quot;&gt;✓&lt;/button&gt;</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;button onclick=&quot;deleteTask(&#39;</span><span class="sc">${</span>task<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">&#39;)&quot;&gt;✗&lt;/button&gt;</span></span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/td&gt;</span></span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/tr&gt;</span></span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="op">.</span><span class="fu">join</span>(<span class="st">&#39;&#39;</span>)<span class="op">;</span></span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>  tableBody<span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> html<span class="op">;</span></span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Analisis Kompleksitas:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Files</th>
+<th>Lines of Code</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Database</td>
+<td>1 Sheets</td>
+<td>0 (manual setup)</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>1 Apps Script</td>
+<td>~150 lines</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Frontend Login</td>
+<td>1 HTML</td>
+<td>~100 lines</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td>Frontend Dashboard</td>
+<td>1 HTML</td>
+<td>~250 lines</td>
+<td>10 min</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td><strong>4 files</strong></td>
+<td><strong>~500 lines</strong></td>
+<td><strong>30 min</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fitur yang Tercover:</strong> ✅ Authentication
+(login/logout) ✅ Create task ✅ Read tasks (list + auto refresh) ✅
+Update task (complete with note) ✅ Delete task ✅ Auto check overdue
+(background job) ✅ Responsive design ✅ Error handling</p>
+<p><strong>What If You Need More?</strong></p>
+<p><strong>Tambah Fitur “Filter by Date”</strong> (+5 menit):</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">filterByDate</span>(dateFrom<span class="op">,</span> dateTo) {</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> filtered <span class="op">=</span> tasks<span class="op">.</span><span class="fu">filter</span>(task <span class="kw">=&gt;</span> {</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> created <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(task<span class="op">.</span><span class="at">tsCreated</span>)<span class="op">;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> created <span class="op">&gt;=</span> dateFrom <span class="op">&amp;&amp;</span> created <span class="op">&lt;=</span> dateTo<span class="op">;</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">renderTasks</span>(filtered)<span class="op">;</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Tambah Fitur “Search by Name”</strong> (+5 menit):</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">searchTasks</span>(keyword) {</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> filtered <span class="op">=</span> tasks<span class="op">.</span><span class="fu">filter</span>(task <span class="kw">=&gt;</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    task<span class="op">.</span><span class="at">itemName</span><span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">includes</span>(keyword<span class="op">.</span><span class="fu">toLowerCase</span>())</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">renderTasks</span>(filtered)<span class="op">;</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Tambah Fitur “Export to CSV”</strong> (+10 menit):</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">exportCSV</span>() {</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> csv <span class="op">=</span> tasks<span class="op">.</span><span class="fu">map</span>(t <span class="kw">=&gt;</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="vs">`</span><span class="sc">${</span>t<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">,</span><span class="sc">${</span>t<span class="op">.</span><span class="at">itemName</span><span class="sc">}</span><span class="vs">,</span><span class="sc">${</span>t<span class="op">.</span><span class="at">pic</span><span class="sc">}</span><span class="vs">,</span><span class="sc">${</span>t<span class="op">.</span><span class="at">status</span><span class="sc">}</span><span class="vs">`</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  )<span class="op">.</span><span class="fu">join</span>(<span class="st">&#39;</span><span class="sc">\n</span><span class="st">&#39;</span>)<span class="op">;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> blob <span class="op">=</span> <span class="kw">new</span> <span class="bu">Blob</span>([csv]<span class="op">,</span> { <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;text/csv&#39;</span> })<span class="op">;</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> url <span class="op">=</span> URL<span class="op">.</span><span class="fu">createObjectURL</span>(blob)<span class="op">;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> a <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">&#39;a&#39;</span>)<span class="op">;</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  a<span class="op">.</span><span class="at">href</span> <span class="op">=</span> url<span class="op">;</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  a<span class="op">.</span><span class="at">download</span> <span class="op">=</span> <span class="st">&#39;tasks.csv&#39;</span><span class="op">;</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  a<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Exercise:</strong> 1. Follow timeline 30 menit di atas 2.
+Build Task Manager dari nol 3. Test semua fitur CRUD 4. Deploy ke
+Netlify 5. Share URL ke teman, minta feedback</p>
+<p><strong>Takeaway:</strong> - 30 menit real, bukan clickbait (dengan
+template) - 500 lines code untuk production-ready app (not bad!) -
+Template ini bisa di-reuse untuk 10+ apps berbeda</p>
+<hr />
+<h3 id="bab-10-crud-4-fungsi-yang-bisa-solve-90-masalah"><strong>BAB 10:
+CRUD: 4 FUNGSI YANG BISA SOLVE 90% MASALAH</strong></h3>
+<p><strong>CRUD = Create, Read, Update, Delete</strong></p>
+<p><strong>Mengapa CRUD Itu Powerful?</strong> - 90% aplikasi bisnis =
+CRUD + sedikit logic - Kalau sudah paham CRUD, bisa build: - Task
+Manager - Inventory System - CRM (Customer Relationship Management) - HR
+Absensi - Finance Tracker - dll.</p>
+<p><strong>Template CRUD Universal:</strong></p>
+<p><strong>1. CREATE (Tambah Data)</strong></p>
+<p><strong>Apps Script:</strong></p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">addItem</span>(data) {</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;db01&#39;</span>)<span class="op">;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> id <span class="op">=</span> <span class="fu">generateId</span>()<span class="op">;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> now <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">.</span><span class="fu">toISOString</span>()<span class="op">;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  sheet<span class="op">.</span><span class="fu">appendRow</span>([</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    id<span class="op">,</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="at">name</span><span class="op">,</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="at">category</span><span class="op">,</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="at">price</span><span class="op">,</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    now</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  ])<span class="op">;</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> { id<span class="op">,</span> <span class="op">...</span>data<span class="op">,</span> <span class="dt">createdAt</span><span class="op">:</span> now }<span class="op">;</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Frontend:</strong></p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">create</span>() {</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;addItem&#39;</span><span class="op">,</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)<span class="op">,</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">data</span><span class="op">:</span> {</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>        <span class="dt">name</span><span class="op">:</span> itemName<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>        <span class="dt">category</span><span class="op">:</span> category<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>        <span class="dt">price</span><span class="op">:</span> price<span class="op">.</span><span class="at">value</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (result<span class="op">.</span><span class="at">success</span>) {</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">alert</span>(<span class="st">&#39;Item added!&#39;</span>)<span class="op">;</span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">loadItems</span>()<span class="op">;</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>2. READ (Ambil Data)</strong></p>
+<p><strong>Apps Script:</strong></p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getItems</span>() {</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;db01&#39;</span>)<span class="op">;</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getRange</span>(<span class="st">&#39;A2:E&#39;</span>)<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> data</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(row <span class="kw">=&gt;</span> row[<span class="dv">0</span>])</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">map</span>(row <span class="kw">=&gt;</span> ({</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">id</span><span class="op">:</span> row[<span class="dv">0</span>]<span class="op">,</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">name</span><span class="op">:</span> row[<span class="dv">1</span>]<span class="op">,</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">category</span><span class="op">:</span> row[<span class="dv">2</span>]<span class="op">,</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">price</span><span class="op">:</span> row[<span class="dv">3</span>]<span class="op">,</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">createdAt</span><span class="op">:</span> row[<span class="dv">4</span>]</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>    }))<span class="op">;</span></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Frontend:</strong></p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">loadItems</span>() {</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;getItems&#39;</span><span class="op">,</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (result<span class="op">.</span><span class="at">success</span>) {</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">renderItems</span>(result<span class="op">.</span><span class="at">data</span>)<span class="op">;</span></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">renderItems</span>(items) {</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> html <span class="op">=</span> items<span class="op">.</span><span class="fu">map</span>(item <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class=&quot;item-card&quot;&gt;</span></span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;h3&gt;</span><span class="sc">${</span>item<span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">&lt;/h3&gt;</span></span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;p&gt;</span><span class="sc">${</span>item<span class="op">.</span><span class="at">category</span><span class="sc">}</span><span class="vs"> - $</span><span class="sc">${</span>item<span class="op">.</span><span class="at">price</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;button onclick=&quot;editItem(&#39;</span><span class="sc">${</span>item<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">&#39;)&quot;&gt;Edit&lt;/button&gt;</span></span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;button onclick=&quot;deleteItem(&#39;</span><span class="sc">${</span>item<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">&#39;)&quot;&gt;Delete&lt;/button&gt;</span></span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="op">.</span><span class="fu">join</span>(<span class="st">&#39;&#39;</span>)<span class="op">;</span></span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a>  container<span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> html<span class="op">;</span></span>
+<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>3. UPDATE (Edit Data)</strong></p>
+<p><strong>Apps Script:</strong></p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">updateItem</span>(id<span class="op">,</span> newData) {</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;db01&#39;</span>)<span class="op">;</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> data<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (data[i][<span class="dv">0</span>] <span class="op">===</span> id) {</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>      sheet<span class="op">.</span><span class="fu">getRange</span>(i <span class="op">+</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">.</span><span class="fu">setValue</span>(newData<span class="op">.</span><span class="at">name</span>)<span class="op">;</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>      sheet<span class="op">.</span><span class="fu">getRange</span>(i <span class="op">+</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">3</span>)<span class="op">.</span><span class="fu">setValue</span>(newData<span class="op">.</span><span class="at">category</span>)<span class="op">;</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>      sheet<span class="op">.</span><span class="fu">getRange</span>(i <span class="op">+</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">4</span>)<span class="op">.</span><span class="fu">setValue</span>(newData<span class="op">.</span><span class="at">price</span>)<span class="op">;</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Frontend:</strong></p>
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">updateItem</span>(id) {</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;updateItem&#39;</span><span class="op">,</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)<span class="op">,</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">id</span><span class="op">:</span> id<span class="op">,</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">data</span><span class="op">:</span> {</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>        <span class="dt">name</span><span class="op">:</span> itemName<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>        <span class="dt">category</span><span class="op">:</span> category<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>        <span class="dt">price</span><span class="op">:</span> price<span class="op">.</span><span class="at">value</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (result<span class="op">.</span><span class="at">success</span>) {</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">alert</span>(<span class="st">&#39;Item updated!&#39;</span>)<span class="op">;</span></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">loadItems</span>()<span class="op">;</span></span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>4. DELETE (Hapus Data)</strong></p>
+<p><strong>Apps Script:</strong></p>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">deleteItem</span>(id) {</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;db01&#39;</span>)<span class="op">;</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> data<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (data[i][<span class="dv">0</span>] <span class="op">===</span> id) {</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>      sheet<span class="op">.</span><span class="fu">deleteRow</span>(i <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Frontend:</strong></p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">deleteItem</span>(id) {</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="fu">confirm</span>(<span class="st">&#39;Yakin mau hapus?&#39;</span>)) <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;deleteItem&#39;</span><span class="op">,</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)<span class="op">,</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">id</span><span class="op">:</span> id</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (result<span class="op">.</span><span class="at">success</span>) {</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">alert</span>(<span class="st">&#39;Item deleted!&#39;</span>)<span class="op">;</span></span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">loadItems</span>()<span class="op">;</span></span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>CRUD Pattern di Real Use Cases:</strong></p>
+<p><strong>A. Inventory Toko</strong> - CREATE: Tambah barang baru -
+READ: Lihat daftar barang + stok - UPDATE: Update stok setelah terjual -
+DELETE: Hapus barang discontinue</p>
+<p><strong>B. Absensi Karyawan</strong> - CREATE: Check in (record
+timestamp) - READ: Lihat history absensi bulan ini - UPDATE: Koreksi jam
+masuk (salah input) - DELETE: Hapus record duplikat</p>
+<p><strong>C. Customer Database (CRM)</strong> - CREATE: Tambah customer
+baru - READ: Lihat list customer + filter - UPDATE: Update status (lead
+→ paying) - DELETE: Hapus customer inactive</p>
+<p><strong>Tips Optimasi:</strong></p>
+<p><strong>1. Bulk Operations</strong> Kalau butuh hapus/update banyak
+data:</p>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">bulkDelete</span>(ids) {</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  ids<span class="op">.</span><span class="fu">forEach</span>(id <span class="kw">=&gt;</span> <span class="fu">deleteItem</span>(id))<span class="op">;</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>2. Pagination</strong> Kalau data &gt; 100 rows:</p>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getItemsPaginated</span>(page<span class="op">,</span> limit) {</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> start <span class="op">=</span> (page <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> limit<span class="op">;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> items <span class="op">=</span> <span class="fu">getItems</span>()<span class="op">;</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> items<span class="op">.</span><span class="fu">slice</span>(start<span class="op">,</span> start <span class="op">+</span> limit)<span class="op">;</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>3. Search &amp; Filter</strong> Combine dengan READ:</p>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">searchItems</span>(keyword) {</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> items <span class="op">=</span> <span class="fu">getItems</span>()<span class="op">;</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> items<span class="op">.</span><span class="fu">filter</span>(item <span class="kw">=&gt;</span> </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    item<span class="op">.</span><span class="at">name</span><span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">includes</span>(keyword<span class="op">.</span><span class="fu">toLowerCase</span>())</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Exercise:</strong> 1. Copy template CRUD di atas 2.
+Modifikasi untuk use case Anda (Inventory/CRM/HR) 3. Test semua 4 fungsi
+4. Tambah 1 fitur bonus (search/filter/export)</p>
+<p><strong>Takeaway:</strong> - CRUD = 80% dari semua aplikasi bisnis -
+Template ini copy-paste ready - Kalau CRUD sudah jalan, sisanya tinggal
+polish UI</p>
+<hr />
+<h3 id="bab-11-deploy-ke-internet-gratis-tanpa-server"><strong>BAB 11:
+DEPLOY KE INTERNET (GRATIS, TANPA SERVER)</strong></h3>
+<p><strong>Mengapa Perlu Deploy?</strong> - File lokal hanya bisa
+diakses di komputer Anda - Deploy = aplikasi bisa diakses dari mana saja
+(HP, tablet, komputer lain) - Dapat URL permanen untuk share ke
+user/client</p>
+<p><strong>Top 3 Hosting Gratis (Recommended):</strong></p>
+<hr />
+<p><strong>1. NETLIFY</strong> ⭐⭐⭐⭐⭐</p>
+<p><strong>Keuntungan:</strong> - Drag &amp; drop folder → instant
+deploy - SSL gratis (HTTPS otomatis) - CDN global (loading cepat dari
+mana saja) - 100 GB bandwidth/bulan (cukup untuk 10,000+ visitor) -
+Custom domain support</p>
+<p><strong>Cara Deploy (5 Menit):</strong> 1. Buka <a
+href="https://netlify.com">netlify.com</a> 2. Sign up dengan
+email/GitHub 3. Klik “Add new site” → “Deploy manually” 4. <strong>Drag
+folder <code>public/</code></strong> ke area upload 5. Tunggu 30 detik →
+Done! 6. URL: <code>https://random-name-123.netlify.app</code></p>
+<p><strong>Custom Domain:</strong> - Domain Settings → Add domain -
+Gratis: <code>yourname.netlify.app</code> - Custom: Connect domain dari
+Cloudflare/Niagahoster</p>
+<p><strong>Update Aplikasi:</strong> - Drag folder baru → auto
+replace</p>
+<hr />
+<p><strong>2. VERCEL</strong> ⭐⭐⭐⭐</p>
+<p><strong>Keuntungan:</strong> - Support Next.js, React, Vue (kalau
+nanti upgrade) - Instant deployment - Analytics built-in - Edge
+functions (serverless)</p>
+<p><strong>Cara Deploy:</strong> 1. Buka <a
+href="https://vercel.com">vercel.com</a> 2. Sign up dengan GitHub 3. New
+Project → Import repository (atau upload folder) 4. Deploy otomatis 5.
+URL: <code>https://yourapp.vercel.app</code></p>
+<hr />
+<p><strong>3. GITHUB PAGES</strong> ⭐⭐⭐</p>
+<p><strong>Keuntungan:</strong> - Langsung terintegrasi dengan GitHub -
+Version control built-in - Gratis selamanya</p>
+<p><strong>Cara Deploy:</strong> 1. Buat repo GitHub baru:
+<code>task-manager</code> 2. Upload folder <code>public/</code> 3.
+Settings → Pages → Source: <code>main branch</code> → folder:
+<code>/ (root)</code> atau <code>/public</code> 4. Save → URL:
+<code>https://username.github.io/task-manager/</code></p>
+<p><strong>Bonus: Custom Domain di GitHub Pages</strong> - Add CNAME
+file di root: <code>yourname.com</code> - Update DNS di domain
+provider</p>
+<hr />
+<p><strong>Perbandingan Hosting:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Fitur</th>
+<th>Netlify</th>
+<th>Vercel</th>
+<th>GitHub Pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deploy Speed</td>
+<td>⚡ 30s</td>
+<td>⚡ 30s</td>
+<td>🐢 2 menit</td>
+</tr>
+<tr>
+<td>Bandwidth</td>
+<td>100 GB</td>
+<td>100 GB</td>
+<td>100 GB</td>
+</tr>
+<tr>
+<td>SSL</td>
+<td>✅ Auto</td>
+<td>✅ Auto</td>
+<td>✅ Auto</td>
+</tr>
+<tr>
+<td>Custom Domain</td>
+<td>✅ Gratis</td>
+<td>✅ Gratis</td>
+<td>✅ Gratis</td>
+</tr>
+<tr>
+<td>Ease of Use</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rekomendasi:</strong> - <strong>Pemula:</strong> Netlify
+(paling mudah) - <strong>Developer:</strong> Vercel (lebih advanced) -
+<strong>Open Source:</strong> GitHub Pages (showcase project)</p>
+<hr />
+<p><strong>Setup Homepage (index.html):</strong></p>
+<p>Kebanyakan hosting otomatis baca <code>index.html</code> sebagai
+homepage.<br />
+Kalau file Anda <code>login.html</code>, ada 2 opsi:</p>
+<p><strong>Opsi 1: Rename</strong></p>
+<pre><code>login.html → index.html</code></pre>
+<p><strong>Opsi 2: Buat index.html Redirect</strong></p>
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> http-equiv</span><span class="op">=</span><span class="st">&quot;refresh&quot;</span><span class="ot"> content</span><span class="op">=</span><span class="st">&quot;0; url=login.html&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Redirecting to login...<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div>
+<hr />
+<p><strong>Testing Checklist Setelah Deploy:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Buka URL di browser → halaman login
+muncul</label></li>
+<li><label><input type="checkbox" />Test login dengan user
+dummy</label></li>
+<li><label><input type="checkbox" />Test add task</label></li>
+<li><label><input type="checkbox" />Test complete task</label></li>
+<li><label><input type="checkbox" />Test delete task</label></li>
+<li><label><input type="checkbox" />Test logout</label></li>
+<li><label><input type="checkbox" />Buka di HP →
+responsive?</label></li>
+<li><label><input type="checkbox" />Buka di browser lain (Chrome,
+Firefox, Safari)</label></li>
+<li><label><input type="checkbox" />HTTPS aktif? (lock icon di address
+bar)</label></li>
+</ul>
+<hr />
+<p><strong>Troubleshooting:</strong></p>
+<p><strong>Error: “404 Not Found”</strong> → Pastikan deploy dari folder
+<code>public/</code>, bukan root project</p>
+<p><strong>Error: “Failed to fetch API”</strong> → Cek API_URL di file
+HTML sudah benar</p>
+<p><strong>Error: “Mixed Content” (HTTP/HTTPS)</strong> → Apps Script
+URL harus HTTPS (otomatis sudah HTTPS)</p>
+<p><strong>Halaman blank</strong> → Buka Developer Console (F12) → cek
+error JavaScript</p>
+<hr />
+<p><strong>Exercise:</strong> 1. Pilih 1 hosting (Netlify recommended)
+2. Deploy aplikasi Task Manager Anda 3. Test semua fitur 4. Share URL ke
+3 orang, minta feedback 5. Update berdasarkan feedback → deploy lagi</p>
+<p><strong>Takeaway:</strong> - Deploy itu mudah (5 menit, not 5 hours!)
+- Gratis selamanya (Netlify/Vercel/GitHub) - Update aplikasi = drag
+folder baru (not rocket science!)</p>
+<hr />
+<h3 id="bab-12-maintenance-update-tanpa-coding"><strong>BAB 12:
+MAINTENANCE: UPDATE TANPA CODING</strong></h3>
+<p><strong>Skenario Update Tanpa Sentuh Code:</strong></p>
+<p><strong>1. Tambah User Baru</strong> - Buka Google Sheets → Tab
+<code>user</code> - Tambah row baru:
+<code>| john | pass123 | user |</code> - Done! User <code>john</code>
+langsung bisa login</p>
+<p><strong>2. Edit Data Task Manual</strong> - Buka Google Sheets → Tab
+<code>db01</code> - Edit cell langsung (ubah nama task, status, dll) -
+Refresh dashboard → update langsung terlihat</p>
+<p><strong>3. Backup Data</strong> - File → Download → Excel (.xlsx) -
+Simpan di Google Drive / Dropbox - Set reminder backup setiap bulan</p>
+<p><strong>4. Restore Data (Rollback)</strong> - Upload backup .xlsx ke
+Google Sheets - Ganti Sheets ID di Apps Script (kalau beda spreadsheet)
+- Deploy ulang</p>
+<p><strong>5. Update Apps Script (Backend)</strong> - Extensions → Apps
+Script - Edit code → Save - <strong>WAJIB:</strong> Deploy → Manage
+deployments → Edit → Version: New → Deploy - Frontend otomatis connect
+ke version baru</p>
+<p><strong>6. Update Frontend (HTML)</strong> - Edit file
+<code>login.html</code> atau <code>dashboard.html</code> lokal - Upload
+ulang ke Netlify (drag &amp; drop) - Auto replace, URL tetap sama</p>
+<hr />
+<p><strong>Maintenance Checklist (Bulanan):</strong></p>
+<p><strong>✅ Data Health Check</strong> - [ ] Cek ada row
+kosong/corrupt? - [ ] Cek ID duplicate? - [ ] Cek status typo? (harusnya
+<code>done</code>, malah <code>Done</code> atau
+<code>selesai</code>)</p>
+<p><strong>✅ Performance Check</strong> - [ ] Google Sheets &lt; 5000
+rows? (kalau &gt; 5000, consider archive) - [ ] Apps Script quota usage
+&lt; 50%? (lihat di dashboard) - [ ] Loading time dashboard &lt; 2
+detik?</p>
+<p><strong>✅ Security Check</strong> - [ ] Ganti password user default?
+- [ ] Apps Script masih “Who has access: Anyone”? - [ ] Tidak ada
+API_URL terpublish di forum public?</p>
+<p><strong>✅ Backup</strong> - [ ] Download Sheets as .xlsx - [ ]
+Simpan di 2 tempat (Drive + lokal)</p>
+<hr />
+<p><strong>Common Issues &amp; Quick Fix:</strong></p>
+<p><strong>Issue: “User lupa password”</strong> <strong>Fix:</strong>
+Buka Sheets → tab <code>user</code> → lihat/reset password di kolom
+B</p>
+<p><strong>Issue: “Data hilang/terhapus”</strong> <strong>Fix:</strong>
+File → Version history → Restore versi sebelumnya (Google Sheets punya
+auto-backup!)</p>
+<p><strong>Issue: “Task tidak bisa didelete”</strong>
+<strong>Fix:</strong> Cek ID task di Sheets, pastikan match dengan yang
+di frontend</p>
+<p><strong>Issue: “Overdue tidak update”</strong> <strong>Fix:</strong>
+Overdue hanya cek saat load dashboard, tunggu auto-refresh (30s) atau
+refresh manual</p>
+<p><strong>Issue: “Loading lambat”</strong> <strong>Fix 1:</strong>
+Archive old data (pindah ke sheet <code>archive</code>)<br />
+<strong>Fix 2:</strong> Add loading spinner di UI<br />
+<strong>Fix 3:</strong> Pagination (load 50 task per page)</p>
+<hr />
+<p><strong>Advanced: Auto Archive Old Data</strong></p>
+<p>Apps Script (Jalankan Trigger 1x/bulan):</p>
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">autoArchive</span>() {</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> dbSheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;db01&#39;</span>)<span class="op">;</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> archiveSheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;archive&#39;</span>)<span class="op">;</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span>archiveSheet) {</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    SpreadsheetApp<span class="op">.</span><span class="fu">getActiveSpreadsheet</span>()<span class="op">.</span><span class="fu">insertSheet</span>(<span class="st">&#39;archive&#39;</span>)<span class="op">;</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> dbSheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> now <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">;</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> data<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;=</span> <span class="dv">1</span><span class="op">;</span> i<span class="op">--</span>) {</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> created <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(data[i][<span class="dv">4</span>])<span class="op">;</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> daysDiff <span class="op">=</span> (now <span class="op">-</span> created) <span class="op">/</span> (<span class="dv">1000</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> <span class="dv">24</span>)<span class="op">;</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (daysDiff <span class="op">&gt;</span> <span class="dv">90</span> <span class="op">&amp;&amp;</span> data[i][<span class="dv">3</span>] <span class="op">===</span> <span class="st">&#39;done&#39;</span>) {</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>      archiveSheet<span class="op">.</span><span class="fu">appendRow</span>(data[i])<span class="op">;</span></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>      dbSheet<span class="op">.</span><span class="fu">deleteRow</span>(i <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Setup Trigger: 1. Apps Script → Triggers (icon jam) 2. Add Trigger →
+<code>autoArchive</code> → Time-driven → Month → Day 1 3. Save</p>
+<hr />
+<p><strong>Exercise:</strong> 1. Set reminder di calendar: “Maintenance
+Task Manager” (setiap bulan) 2. Praktek backup: Download Sheets as Excel
+3. Praktek restore: Buka version history, restore 1 versi sebelumnya 4.
+Praktek update: Ganti judul dashboard “Task Manager” jadi “My Tasks”</p>
+<p><strong>Takeaway:</strong> - Maintenance tidak perlu coding skill -
+Google Sheets version history = lifesaver - Backup rutin = sleep well at
+night - 30 menit/bulan cukup untuk maintenance</p>
+<hr />
+<h3
+id="bab-13-dari-1-app-ke-10-apps-dengan-template-yang-sama"><strong>BAB
+13: DARI 1 APP KE 10 APPS DENGAN TEMPLATE YANG SAMA</strong></h3>
+<p><strong>Konsep Multi-App:</strong></p>
+<p>Anda sudah punya <strong>Task Manager</strong> yang jalan.<br />
+Dengan template yang sama, bisa bikin:</p>
+<ol type="1">
+<li><strong>Inventory System</strong> (barang, stok, harga)</li>
+<li><strong>CRM</strong> (customer, status, deals)</li>
+<li><strong>HR Absensi</strong> (karyawan, tanggal, jam
+masuk/keluar)</li>
+<li><strong>Finance Tracker</strong> (transaksi, kategori, amount)</li>
+<li><strong>Project Tracker</strong> (project, milestone, progress)</li>
+<li><strong>Lead Management</strong> (lead, source, conversion)</li>
+<li><strong>Equipment Booking</strong> (alat, booker, tanggal)</li>
+<li><strong>Complaint System</strong> (complaint, PIC, status)</li>
+<li><strong>Menu Ordering</strong> (item, qty, table, status)</li>
+<li><strong>Student Grades</strong> (siswa, mata pelajaran, nilai)</li>
+</ol>
+<p><strong>Cara Clone Template:</strong></p>
+<p><strong>Step 1: Duplikat Folder</strong></p>
+<pre><code>task-manager/        (original)
+  ├── login.html
+  └── dashboard.html
+
+inventory-system/    (clone)
+  ├── login.html     (sama persis)
+  └── dashboard.html (ubah UI + field)</code></pre>
+<p><strong>Step 2: Update Database Structure</strong></p>
+<p><strong>Inventory System:</strong> | id | itemName | category | stock
+| price | lastUpdated | |—-|———-|———-|——-|——-|————-|</p>
+<p><strong>CRM:</strong> | id | customerName | email | phone | status |
+dealValue | lastContact | |—-|————–|——-|——-|——–|———–|————-|</p>
+<p><strong>HR Absensi:</strong> | id | employeeName | date | checkIn |
+checkOut | totalHours | |—-|————–|——|———|———-|————|</p>
+<p><strong>Step 3: Update Apps Script</strong></p>
+<p>Ganti nama fungsi + field:</p>
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Task Manager</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">addTask</span>(itemName<span class="op">,</span> username) { <span class="op">...</span> }</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="co">// Inventory System</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">addItem</span>(itemName<span class="op">,</span> category<span class="op">,</span> stock<span class="op">,</span> price) { <span class="op">...</span> }</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co">// CRM</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">addCustomer</span>(name<span class="op">,</span> email<span class="op">,</span> phone) { <span class="op">...</span> }</span></code></pre></div>
+<p><strong>Step 4: Update Frontend UI</strong></p>
+<p><strong>Dashboard Inventory:</strong></p>
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;add-form&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;text&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;itemName&quot;</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">&quot;Nama barang&quot;</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;text&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;category&quot;</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">&quot;Kategori&quot;</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;number&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;stock&quot;</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">&quot;Stok&quot;</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;number&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;price&quot;</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">&quot;Harga&quot;</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> onclick</span><span class="op">=</span><span class="st">&quot;addItem()&quot;</span><span class="dt">&gt;</span>Simpan<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
+<p><strong>Dashboard CRM:</strong></p>
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;add-form&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;text&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;customerName&quot;</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">&quot;Nama customer&quot;</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;email&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;email&quot;</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">&quot;Email&quot;</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;tel&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;phone&quot;</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">&quot;Phone&quot;</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">select</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;status&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">option</span><span class="dt">&gt;</span>Lead<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">option</span><span class="dt">&gt;</span>Prospect<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">option</span><span class="dt">&gt;</span>Customer<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">select</span><span class="dt">&gt;</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> onclick</span><span class="op">=</span><span class="st">&quot;addCustomer()&quot;</span><span class="dt">&gt;</span>Simpan<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
+<hr />
+<p><strong>Template Universal (Starter Kit):</strong></p>
+<p><strong>1. File Structure</strong></p>
+<pre><code>app-name/
+├── public/
+│   ├── login.html
+│   ├── dashboard.html
+│   └── style.css (optional)
+├── SETUP.md
+└── README.md</code></pre>
+<p><strong>2. Google Sheets Template</strong></p>
+<pre><code>Sheet: user (sama untuk semua app)
+Sheet: db01 (customize per app)
+Sheet: logs (optional)</code></pre>
+<p><strong>3. Apps Script Template</strong></p>
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ===== CONFIG =====</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> SHEET_NAME <span class="op">=</span> <span class="st">&#39;db01&#39;</span><span class="op">;</span> <span class="co">// ganti per app</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co">// ===== HELPERS ===== (sama semua app)</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getSheet</span>(name) { <span class="op">...</span> }</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">success</span>(data) { <span class="op">...</span> }</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">error</span>(message) { <span class="op">...</span> }</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">validateUser</span>(username<span class="op">,</span> password) { <span class="op">...</span> }</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a><span class="co">// ===== CRUD ===== (customize per app)</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getItems</span>() { <span class="op">...</span> }</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">addItem</span>(data) { <span class="op">...</span> }</span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">updateItem</span>(id<span class="op">,</span> data) { <span class="op">...</span> }</span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">deleteItem</span>(id) { <span class="op">...</span> }</span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a><span class="co">// ===== MAIN ===== (sama semua app)</span></span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">doPost</span>(e) { <span class="op">...</span> }</span></code></pre></div>
+<hr />
+<p><strong>Rekomendasi Build Order:</strong></p>
+<p><strong>Bulan 1:</strong> Task Manager (belajar CRUD dasar)<br />
+<strong>Bulan 2:</strong> Inventory System (tambah kategori +
+stok)<br />
+<strong>Bulan 3:</strong> CRM (tambah status pipeline + email)<br />
+<strong>Bulan 4:</strong> Finance Tracker (tambah sum/total
+calculation)<br />
+<strong>Bulan 5:</strong> HR Absensi (tambah date range filter)</p>
+<p>Setiap bulan: 1 app baru (30 menit build + 30 menit polish)</p>
+<hr />
+<p><strong>Multi-Database di 1 Spreadsheet:</strong></p>
+<p>Kalau mau 10 apps, tapi 1 Sheets:</p>
+<pre><code>Google Sheets: &quot;Business Hub&quot;
+  ├── Tab: user (shared login untuk semua app)
+  ├── Tab: tasks (Task Manager)
+  ├── Tab: inventory (Inventory System)
+  ├── Tab: customers (CRM)
+  ├── Tab: attendance (HR Absensi)
+  ├── Tab: transactions (Finance)
+  └── Tab: logs (activity tracking)</code></pre>
+<p><strong>Keuntungan:</strong> - 1 Apps Script untuk semua (switch tab
+aja) - 1 login untuk semua app (seamless UX) - Relasi data mudah
+(contoh: Task → Customer)</p>
+<p><strong>Code:</strong></p>
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">doPost</span>(e) {</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> params <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(e<span class="op">.</span><span class="at">postData</span><span class="op">.</span><span class="at">contents</span>)<span class="op">;</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">switch</span>(params<span class="op">.</span><span class="at">app</span>) {</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;tasks&#39;</span><span class="op">:</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">handleTasks</span>(params)<span class="op">;</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;inventory&#39;</span><span class="op">:</span></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">handleInventory</span>(params)<span class="op">;</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;crm&#39;</span><span class="op">:</span></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">handleCRM</span>(params)<span class="op">;</span></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Unknown app&#39;</span>)<span class="op">;</span></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<hr />
+<p><strong>Exercise:</strong> 1. Clone Task Manager → jadi Inventory
+System 2. Update database structure (4 kolom: item, category, stock,
+price) 3. Update Apps Script (fungsi addItem, getItems) 4. Update
+dashboard UI (form + table) 5. Deploy dan test</p>
+<p><strong>Takeaway:</strong> - 1 template → 10 apps (copy-paste +
+customize) - 30 menit per app baru (karena sudah punya template) -
+Multi-database di 1 Sheets = super efficient</p>
+<hr />
+<h3
+id="bab-14-multi-database-finance-inventory-hr-dalam-satu-sistem"><strong>BAB
+14: MULTI-DATABASE: FINANCE, INVENTORY, HR DALAM SATU
+SISTEM</strong></h3>
+<p><strong>Konsep Hub System:</strong></p>
+<p><strong>Google Sheets: “Business Hub”</strong></p>
+<pre><code>Tab 1: user (Username, Password, Role, Apps Access)
+Tab 2: tasks (Task Manager data)
+Tab 3: inventory (Barang, Stok, Harga)
+Tab 4: finance (Transaksi, Amount, Kategori)
+Tab 5: customers (CRM data)
+Tab 6: employees (HR data)
+Tab 7: attendance (Absensi data)
+Tab 8: logs (Activity tracking semua app)</code></pre>
+<p><strong>Frontend:</strong></p>
+<pre><code>https://yourapp.com/
+  ├── /login.html (shared login)
+  ├── /hub.html (pilih app)
+  ├── /tasks/ (Task Manager)
+  ├── /inventory/ (Inventory System)
+  ├── /finance/ (Finance Tracker)
+  ├── /crm/ (Customer Management)
+  └── /hr/ (HR &amp; Absensi)</code></pre>
+<hr />
+<p><strong>Implementasi Hub System:</strong></p>
+<p><strong>1. hub.html (App Selector)</strong></p>
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;hub-container&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Business Hub<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;apps-grid&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;tasks/dashboard.html&quot;</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;app-card&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>📋 Task Manager<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Manage team tasks<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;inventory/dashboard.html&quot;</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;app-card&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>📦 Inventory<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Track stock <span class="er">&amp;</span> products<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;finance/dashboard.html&quot;</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;app-card&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>💰 Finance<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Income <span class="er">&amp;</span> expenses<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;crm/dashboard.html&quot;</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;app-card&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>👥 CRM<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Customer management<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
+<p><strong>2. Apps Script (Route per App)</strong></p>
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">doPost</span>(e) {</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> params <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(e<span class="op">.</span><span class="at">postData</span><span class="op">.</span><span class="at">contents</span>)<span class="op">;</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="fu">validateUser</span>(params<span class="op">.</span><span class="at">username</span><span class="op">,</span> params<span class="op">.</span><span class="at">password</span>)) {</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Invalid credentials&#39;</span>)<span class="op">;</span></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Route based on app</span></span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">switch</span>(params<span class="op">.</span><span class="at">app</span>) {</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> <span class="st">&#39;tasks&#39;</span><span class="op">:</span></span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">handleTasks</span>(params)<span class="op">;</span></span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> <span class="st">&#39;inventory&#39;</span><span class="op">:</span></span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">handleInventory</span>(params)<span class="op">;</span></span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> <span class="st">&#39;finance&#39;</span><span class="op">:</span></span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">handleFinance</span>(params)<span class="op">;</span></span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> <span class="st">&#39;crm&#39;</span><span class="op">:</span></span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">handleCRM</span>(params)<span class="op">;</span></span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb42-23"><a href="#cb42-23" aria-hidden="true" tabindex="-1"></a>      <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb42-24"><a href="#cb42-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Unknown app&#39;</span>)<span class="op">;</span></span>
+<span id="cb42-25"><a href="#cb42-25" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb42-26"><a href="#cb42-26" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (err) {</span>
+<span id="cb42-27"><a href="#cb42-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">error</span>(err<span class="op">.</span><span class="fu">toString</span>())<span class="op">;</span></span>
+<span id="cb42-28"><a href="#cb42-28" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb42-29"><a href="#cb42-29" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb42-30"><a href="#cb42-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-31"><a href="#cb42-31" aria-hidden="true" tabindex="-1"></a><span class="co">// Tasks Handler</span></span>
+<span id="cb42-32"><a href="#cb42-32" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">handleTasks</span>(params) {</span>
+<span id="cb42-33"><a href="#cb42-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">switch</span>(params<span class="op">.</span><span class="at">action</span>) {</span>
+<span id="cb42-34"><a href="#cb42-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;getTasks&#39;</span><span class="op">:</span></span>
+<span id="cb42-35"><a href="#cb42-35" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">getTasks</span>())<span class="op">;</span></span>
+<span id="cb42-36"><a href="#cb42-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;addTask&#39;</span><span class="op">:</span></span>
+<span id="cb42-37"><a href="#cb42-37" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">addTask</span>(params<span class="op">.</span><span class="at">itemName</span><span class="op">,</span> params<span class="op">.</span><span class="at">username</span>))<span class="op">;</span></span>
+<span id="cb42-38"><a href="#cb42-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb42-39"><a href="#cb42-39" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Unknown action&#39;</span>)<span class="op">;</span></span>
+<span id="cb42-40"><a href="#cb42-40" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb42-41"><a href="#cb42-41" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb42-42"><a href="#cb42-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-43"><a href="#cb42-43" aria-hidden="true" tabindex="-1"></a><span class="co">// Inventory Handler</span></span>
+<span id="cb42-44"><a href="#cb42-44" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">handleInventory</span>(params) {</span>
+<span id="cb42-45"><a href="#cb42-45" aria-hidden="true" tabindex="-1"></a>  <span class="cf">switch</span>(params<span class="op">.</span><span class="at">action</span>) {</span>
+<span id="cb42-46"><a href="#cb42-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;getItems&#39;</span><span class="op">:</span></span>
+<span id="cb42-47"><a href="#cb42-47" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">getInventoryItems</span>())<span class="op">;</span></span>
+<span id="cb42-48"><a href="#cb42-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;addItem&#39;</span><span class="op">:</span></span>
+<span id="cb42-49"><a href="#cb42-49" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">addInventoryItem</span>(params<span class="op">.</span><span class="at">data</span>))<span class="op">;</span></span>
+<span id="cb42-50"><a href="#cb42-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;updateStock&#39;</span><span class="op">:</span></span>
+<span id="cb42-51"><a href="#cb42-51" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">updateStock</span>(params<span class="op">.</span><span class="at">id</span><span class="op">,</span> params<span class="op">.</span><span class="at">qty</span>))<span class="op">;</span></span>
+<span id="cb42-52"><a href="#cb42-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb42-53"><a href="#cb42-53" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Unknown action&#39;</span>)<span class="op">;</span></span>
+<span id="cb42-54"><a href="#cb42-54" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb42-55"><a href="#cb42-55" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb42-56"><a href="#cb42-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-57"><a href="#cb42-57" aria-hidden="true" tabindex="-1"></a><span class="co">// Finance Handler</span></span>
+<span id="cb42-58"><a href="#cb42-58" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">handleFinance</span>(params) {</span>
+<span id="cb42-59"><a href="#cb42-59" aria-hidden="true" tabindex="-1"></a>  <span class="cf">switch</span>(params<span class="op">.</span><span class="at">action</span>) {</span>
+<span id="cb42-60"><a href="#cb42-60" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;getTransactions&#39;</span><span class="op">:</span></span>
+<span id="cb42-61"><a href="#cb42-61" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">getTransactions</span>())<span class="op">;</span></span>
+<span id="cb42-62"><a href="#cb42-62" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;addTransaction&#39;</span><span class="op">:</span></span>
+<span id="cb42-63"><a href="#cb42-63" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">addTransaction</span>(params<span class="op">.</span><span class="at">data</span>))<span class="op">;</span></span>
+<span id="cb42-64"><a href="#cb42-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;getBalance&#39;</span><span class="op">:</span></span>
+<span id="cb42-65"><a href="#cb42-65" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">success</span>(<span class="fu">calculateBalance</span>())<span class="op">;</span></span>
+<span id="cb42-66"><a href="#cb42-66" aria-hidden="true" tabindex="-1"></a>    <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb42-67"><a href="#cb42-67" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Unknown action&#39;</span>)<span class="op">;</span></span>
+<span id="cb42-68"><a href="#cb42-68" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb42-69"><a href="#cb42-69" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>3. Frontend Call (dengan app parameter)</strong></p>
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Di tasks/dashboard.html</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">app</span><span class="op">:</span> <span class="st">&#39;tasks&#39;</span><span class="op">,</span>  <span class="co">// identifier</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;getTasks&#39;</span><span class="op">,</span></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a><span class="co">// Di inventory/dashboard.html</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>  <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">app</span><span class="op">:</span> <span class="st">&#39;inventory&#39;</span><span class="op">,</span>  <span class="co">// identifier</span></span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>    <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;getItems&#39;</span><span class="op">,</span></span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>    <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)</span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code></pre></div>
+<hr />
+<p><strong>Relasi Antar Database:</strong></p>
+<p><strong>Contoh: Finance → Inventory (Auto Update Stok)</strong></p>
+<p><strong>Skenario:</strong> - User input transaksi “Jual Barang A,
+Qty: 5” - Finance tab: record transaksi - Inventory tab: kurangi stok
+Barang A otomatis</p>
+<p><strong>Code:</strong></p>
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">addTransaction</span>(data) {</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> financeSheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;finance&#39;</span>)<span class="op">;</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> inventorySheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;inventory&#39;</span>)<span class="op">;</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">// 1. Add transaction</span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  financeSheet<span class="op">.</span><span class="fu">appendRow</span>([</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">generateId</span>()<span class="op">,</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="at">type</span><span class="op">,</span>      <span class="co">// &#39;sale&#39; or &#39;purchase&#39;</span></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="at">item</span><span class="op">,</span></span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="at">qty</span><span class="op">,</span></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="at">amount</span><span class="op">,</span></span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">.</span><span class="fu">toISOString</span>()</span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>  ])<span class="op">;</span></span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>  <span class="co">// 2. Update inventory stock</span></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (data<span class="op">.</span><span class="at">type</span> <span class="op">===</span> <span class="st">&#39;sale&#39;</span>) {</span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">updateStock</span>(data<span class="op">.</span><span class="at">item</span><span class="op">,</span> <span class="op">-</span>data<span class="op">.</span><span class="at">qty</span>)<span class="op">;</span>  <span class="co">// kurangi stok</span></span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">updateStock</span>(data<span class="op">.</span><span class="at">item</span><span class="op">,</span> data<span class="op">.</span><span class="at">qty</span>)<span class="op">;</span>   <span class="co">// tambah stok</span></span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> { <span class="dt">success</span><span class="op">:</span> <span class="kw">true</span> }<span class="op">;</span></span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb44-24"><a href="#cb44-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-25"><a href="#cb44-25" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">updateStock</span>(itemName<span class="op">,</span> qtyChange) {</span>
+<span id="cb44-26"><a href="#cb44-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;inventory&#39;</span>)<span class="op">;</span></span>
+<span id="cb44-27"><a href="#cb44-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb44-28"><a href="#cb44-28" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb44-29"><a href="#cb44-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> data<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb44-30"><a href="#cb44-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (data[i][<span class="dv">1</span>] <span class="op">===</span> itemName) {</span>
+<span id="cb44-31"><a href="#cb44-31" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> currentStock <span class="op">=</span> data[i][<span class="dv">3</span>]<span class="op">;</span></span>
+<span id="cb44-32"><a href="#cb44-32" aria-hidden="true" tabindex="-1"></a>      sheet<span class="op">.</span><span class="fu">getRange</span>(i <span class="op">+</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">4</span>)<span class="op">.</span><span class="fu">setValue</span>(currentStock <span class="op">+</span> qtyChange)<span class="op">;</span></span>
+<span id="cb44-33"><a href="#cb44-33" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb44-34"><a href="#cb44-34" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb44-35"><a href="#cb44-35" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb44-36"><a href="#cb44-36" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb44-37"><a href="#cb44-37" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<hr />
+<p><strong>Advanced: Dashboard Analytics</strong></p>
+<p><strong>Cross-App Stats:</strong></p>
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getDashboardStats</span>() {</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> tasksCount <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;tasks&#39;</span>)<span class="op">.</span><span class="fu">getLastRow</span>() <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> inventoryValue <span class="op">=</span> <span class="fu">calculateInventoryValue</span>()<span class="op">;</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> monthlyRevenue <span class="op">=</span> <span class="fu">calculateMonthlyRevenue</span>()<span class="op">;</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> activeCustomers <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;customers&#39;</span>)<span class="op">.</span><span class="fu">getLastRow</span>() <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> {</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tasks</span><span class="op">:</span> tasksCount<span class="op">,</span></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">inventoryValue</span><span class="op">:</span> inventoryValue<span class="op">,</span></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">revenue</span><span class="op">:</span> monthlyRevenue<span class="op">,</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">customers</span><span class="op">:</span> activeCustomers</span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">calculateInventoryValue</span>() {</span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;inventory&#39;</span>)<span class="op">;</span></span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getRange</span>(<span class="st">&#39;A2:D&#39;</span>)<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> total <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>  data<span class="op">.</span><span class="fu">forEach</span>(row <span class="kw">=&gt;</span> {</span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (row[<span class="dv">0</span>]) {</span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>      total <span class="op">+=</span> row[<span class="dv">2</span>] <span class="op">*</span> row[<span class="dv">3</span>]<span class="op">;</span>  <span class="co">// stock * price</span></span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> total<span class="op">;</span></span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">calculateMonthlyRevenue</span>() {</span>
+<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;finance&#39;</span>)<span class="op">;</span></span>
+<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getRange</span>(<span class="st">&#39;A2:F&#39;</span>)<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> now <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">;</span></span>
+<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> thisMonth <span class="op">=</span> now<span class="op">.</span><span class="fu">getMonth</span>()<span class="op">;</span></span>
+<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-35"><a href="#cb45-35" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> revenue <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb45-36"><a href="#cb45-36" aria-hidden="true" tabindex="-1"></a>  data<span class="op">.</span><span class="fu">forEach</span>(row <span class="kw">=&gt;</span> {</span>
+<span id="cb45-37"><a href="#cb45-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (row[<span class="dv">0</span>]) {</span>
+<span id="cb45-38"><a href="#cb45-38" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> date <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(row[<span class="dv">5</span>])<span class="op">;</span></span>
+<span id="cb45-39"><a href="#cb45-39" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (date<span class="op">.</span><span class="fu">getMonth</span>() <span class="op">===</span> thisMonth <span class="op">&amp;&amp;</span> row[<span class="dv">1</span>] <span class="op">===</span> <span class="st">&#39;sale&#39;</span>) {</span>
+<span id="cb45-40"><a href="#cb45-40" aria-hidden="true" tabindex="-1"></a>        revenue <span class="op">+=</span> row[<span class="dv">4</span>]<span class="op">;</span>  <span class="co">// amount</span></span>
+<span id="cb45-41"><a href="#cb45-41" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb45-42"><a href="#cb45-42" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb45-43"><a href="#cb45-43" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb45-44"><a href="#cb45-44" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-45"><a href="#cb45-45" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> revenue<span class="op">;</span></span>
+<span id="cb45-46"><a href="#cb45-46" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Frontend Dashboard:</strong></p>
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">loadDashboard</span>() {</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">app</span><span class="op">:</span> <span class="st">&#39;hub&#39;</span><span class="op">,</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;getStats&#39;</span><span class="op">,</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">username</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;user&#39;</span>)<span class="op">,</span></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">password</span><span class="op">:</span> sessionStorage<span class="op">.</span><span class="fu">getItem</span>(<span class="st">&#39;pass&#39;</span>)</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (result<span class="op">.</span><span class="at">success</span>) {</span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&#39;tasksCount&#39;</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> result<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">tasks</span><span class="op">;</span></span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&#39;inventoryValue&#39;</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="vs">`$</span><span class="sc">${</span>result<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">inventoryValue</span><span class="sc">}</span><span class="vs">`</span><span class="op">;</span></span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&#39;revenue&#39;</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="vs">`$</span><span class="sc">${</span>result<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">revenue</span><span class="sc">}</span><span class="vs">`</span><span class="op">;</span></span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&#39;customers&#39;</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> result<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">customers</span><span class="op">;</span></span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb46-20"><a href="#cb46-20" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<hr />
+<p><strong>Access Control (Role-Based):</strong></p>
+<p><strong>Tab: user</strong> | username | password | role | appsAccess
+| |———-|———-|——|————| | admin | admin123 | admin | all | | staff1 |
+pass1 | staff | tasks,inventory | | finance | pass2 | staff | finance
+|</p>
+<p><strong>Apps Script:</strong></p>
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">validateAccess</span>(username<span class="op">,</span> app) {</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sheet <span class="op">=</span> <span class="fu">getSheet</span>(<span class="st">&#39;user&#39;</span>)<span class="op">;</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> data<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (data[i][<span class="dv">0</span>] <span class="op">===</span> username) {</span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> access <span class="op">=</span> data[i][<span class="dv">3</span>]<span class="op">;</span></span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (access <span class="op">===</span> <span class="st">&#39;all&#39;</span>) <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (access<span class="op">.</span><span class="fu">includes</span>(app)) <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">doPost</span>(e) {</span>
+<span id="cb47-19"><a href="#cb47-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> params <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(e<span class="op">.</span><span class="at">postData</span><span class="op">.</span><span class="at">contents</span>)<span class="op">;</span></span>
+<span id="cb47-20"><a href="#cb47-20" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb47-21"><a href="#cb47-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="fu">validateUser</span>(params<span class="op">.</span><span class="at">username</span><span class="op">,</span> params<span class="op">.</span><span class="at">password</span>)) {</span>
+<span id="cb47-22"><a href="#cb47-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Invalid credentials&#39;</span>)<span class="op">;</span></span>
+<span id="cb47-23"><a href="#cb47-23" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb47-24"><a href="#cb47-24" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb47-25"><a href="#cb47-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="fu">validateAccess</span>(params<span class="op">.</span><span class="at">username</span><span class="op">,</span> params<span class="op">.</span><span class="at">app</span>)) {</span>
+<span id="cb47-26"><a href="#cb47-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">error</span>(<span class="st">&#39;Access denied to this app&#39;</span>)<span class="op">;</span></span>
+<span id="cb47-27"><a href="#cb47-27" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb47-28"><a href="#cb47-28" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb47-29"><a href="#cb47-29" aria-hidden="true" tabindex="-1"></a>  <span class="co">// ... rest of code</span></span>
+<span id="cb47-30"><a href="#cb47-30" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<hr />
+<p><strong>Exercise:</strong> 1. Setup Hub System dengan 3 apps (Tasks,
+Inventory, Finance) 2. Implement relasi: Finance → Inventory (update
+stok) 3. Buat dashboard stats (cross-app analytics) 4. Test access
+control (buat user dengan limited access)</p>
+<p><strong>Takeaway:</strong> - 1 Sheets → 10 apps (multi-database) -
+Relasi antar tab mudah (same spreadsheet) - Hub system = professional
+look + efficient management</p>
+<hr />
+<h3
+id="bab-15-kapan-waktunya-hire-programmer-hint-nanti-banget"><strong>BAB
+15: KAPAN WAKTUNYA HIRE PROGRAMMER (HINT: NANTI BANGET)</strong></h3>
+<p><strong>Red Flags: Waktunya Hire Programmer</strong></p>
+<p><strong>1. Data &gt; 10,000 Rows</strong> - Google Sheets mulai
+lambat di &gt; 10k rows - Solution sebelum hire: Archive old data,
+pagination - Kalau masih lambat: Consider Firebase/Supabase (masih bisa
+DIY)</p>
+<p><strong>2. Concurrent Users &gt; 100</strong> - Apps Script quota:
+20,000 calls/day - Kalau traffic tinggi, mulai butuh database real -
+Solution sebelum hire: Optimize query, caching</p>
+<p><strong>3. Complex Business Logic</strong> - Contoh: Algoritma
+pricing dinamis, ML prediction, payment gateway - Kalau logic &gt; 500
+lines, mulai ribet maintain sendiri</p>
+<p><strong>4. Security Critical</strong> - Payment processing, data
+sensitif (KTP, medical record) - Butuh audit, encryption, compliance -
+Jangan main-main, hire expert!</p>
+<p><strong>5. Mobile App Native</strong> - Kalau butuh iOS/Android app
+(bukan web app) - Butuh push notification, GPS, camera native - Consider
+hire atau pakai no-code (FlutterFlow, Adalo)</p>
+<hr />
+<p><strong>Green Flags: Masih Bisa DIY</strong></p>
+<p>✅ <strong>User &lt; 100, Data &lt; 5000 rows</strong><br />
+✅ <strong>CRUD sederhana, tidak ada complex logic</strong><br />
+✅ <strong>Web app cukup (tidak butuh native mobile)</strong><br />
+✅ <strong>Tidak handle payment/data sensitif</strong><br />
+✅ <strong>Budget terbatas (&lt; $500)</strong></p>
+<p><strong>Kesimpulan: 90% bisnis kecil-menengah masih bisa
+DIY!</strong></p>
+<hr />
+<p><strong>Alternative Sebelum Hire:</strong></p>
+<p><strong>1. Upgrade Stack (Masih DIY)</strong> - Dari Sheets →
+Firebase (gratis up to 50k reads/day) - Dari Apps Script → Supabase
+(free tier generous) - Dari HTML → Next.js (belajar 1 minggu)</p>
+<p><strong>2. No-Code Tools</strong> - Airtable (database visual) -
+Zapier/Make (automation) - Bubble.io (build app tanpa code)</p>
+<p><strong>3. Hire Freelancer (1x Project)</strong> - Budget: $100-500
+untuk setup Firebase + refactor - Platform: Upwork, Fiverr, Sribulancer
+(Indonesia) - Hasil: Code clean + dokumentasi</p>
+<p><strong>4. Outsource Maintenance</strong> - Hire VA (Virtual
+Assistant) untuk data entry - Budget: $50/bulan - Mereka maintain
+Sheets, Anda fokus bisnis</p>
+<hr />
+<p><strong>Kapan Invest ke Programmer Full-Time?</strong></p>
+<p><strong>Kondisi Ideal:</strong> - Revenue &gt; $10,000/bulan - User
+&gt; 500 active - Tech debt menghambat growth - Ada budget
+$3,000-5,000/bulan (gaji + tools)</p>
+<p><strong>Sebelum hire:</strong> - Pastikan product-market fit (user
+happy dengan versi simple) - Dokumentasi lengkap (apa yang sudah jalan,
+apa yang butuh improve) - Roadmap jelas (hire untuk apa? Scaling atau
+new features?)</p>
+<hr />
+<p><strong>Cost Comparison:</strong></p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 15%" />
+<col style="width: 32%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Solusi</th>
+<th>Cost</th>
+<th>Maintenance</th>
+<th>Scalability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Sheets + Apps Script</td>
+<td>$0</td>
+<td>DIY (30 min/bulan)</td>
+<td>&lt; 100 users</td>
+</tr>
+<tr>
+<td>Firebase/Supabase DIY</td>
+<td>$0-25/bulan</td>
+<td>DIY (1 hr/bulan)</td>
+<td>&lt; 1000 users</td>
+</tr>
+<tr>
+<td>No-Code (Bubble, Airtable)</td>
+<td>$25-100/bulan</td>
+<td>Low</td>
+<td>&lt; 5000 users</td>
+</tr>
+<tr>
+<td>Freelancer (1x setup)</td>
+<td>$500 (1x)</td>
+<td>DIY</td>
+<td>&lt; 1000 users</td>
+</tr>
+<tr>
+<td>Hire Programmer</td>
+<td>$3,000+/bulan</td>
+<td>Handled</td>
+<td>Unlimited</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Real Case Study:</strong></p>
+<p><strong>Bengkel Motor (Owner: Pak Budi)</strong> - User: 3 mekanik +
+1 admin - Data: 200 customer, 50 task/bulan - Stack: Google Sheets +
+Apps Script - Cost: $0 - Revenue: Naik 20% (karena tracking lebih baik)
+- <strong>Kesimpulan:</strong> No need hire programmer (yet!)</p>
+<p><strong>Warung Makan (Owner: Bu Siti)</strong> - User: 5 kasir + 1
+owner - Data: 100 transaksi/hari - Stack: Google Sheets → Firebase (DIY
+upgrade) - Cost: $10/bulan (Firebase) - Revenue: Naik 30% (inventory
+real-time) - <strong>Kesimpulan:</strong> Upgrade stack, masih no
+hire!</p>
+<p><strong>SaaS Startup (Owner: Team 3 orang)</strong> - User: 500+
+paying customers - Data: 50,000+ rows - Stack: Firebase → PostgreSQL +
+Node.js (hire freelancer) - Cost: $500 setup + $50/bulan hosting -
+Revenue: $15,000/bulan - <strong>Kesimpulan:</strong> Hire freelancer
+untuk refactor, worth it!</p>
+<hr />
+<p><strong>Takeaway:</strong> - Jangan buru-buru hire (optimize dulu
+yang ada) - Upgrade stack bertahap (Sheets → Firebase → Custom) - Hire
+saat revenue sudah support cost (bukan karena hype) - Fokus: User happy?
+Revenue naik? Kalau ya, stack saat ini cukup!</p>
+<hr />
+<h2 id="penutup-your-next-steps">🎉 PENUTUP: YOUR NEXT STEPS</h2>
+<p><strong>Anda Sudah Belajar:</strong> - ✅ Planning aplikasi dari nol
+(5 langkah) - ✅ Database design (Google Sheets) - ✅ Backend API (Apps
+Script) - ✅ Frontend (HTML + JavaScript) - ✅ CRUD (Create, Read,
+Update, Delete) - ✅ Deployment (Netlify/Vercel gratis) - ✅ Maintenance
+(update tanpa coding) - ✅ Multi-app system (10 apps, 1 template)</p>
+<p><strong>Challenge 30 Hari:</strong></p>
+<p><strong>Week 1:</strong> Build Task Manager (follow Bab 9)<br />
+<strong>Week 2:</strong> Build Inventory System (clone Task
+Manager)<br />
+<strong>Week 3:</strong> Build Finance Tracker (tambah sum
+calculation)<br />
+<strong>Week 4:</strong> Build CRM (integrasi ketiga app jadi Hub
+System)</p>
+<p><strong>Hasil:</strong> 4 apps production-ready, 0 framework, 0 biaya
+server!</p>
+<hr />
+<p><strong>Resources:</strong></p>
+<p><strong>Template Download:</strong> - Task Manager Template (HTML +
+Apps Script) - Inventory Template - CRM Template - Hub System
+Template</p>
+<p><strong>Community:</strong> - Discord: [link] - Forum: [link] -
+GitHub: [link]</p>
+<p><strong>Author Contact:</strong> - Email: [email] - Twitter:
+[twitter] - LinkedIn: [linkedin]</p>
+<hr />
+<p><strong>Closing Statement:</strong></p>
+<blockquote>
+<p>“Aplikasi terbaik bukan yang paling canggih,<br />
+tapi yang paling dipakai dan solve masalah real.</p>
+<p>You don’t need to be a programmer.<br />
+You just need to be a problem solver.</p>
+<p>AI akan coding.<br />
+Anda yang mikir.</p>
+<p>Selamat membangun solusi digital Anda! 🚀”</p>
+</blockquote>
+<hr />
+<p><strong>P.S.</strong></p>
+<p>Kalau buku ini membantu, share ke teman yang juga punya masalah
+bisnis tapi takut coding.</p>
+<p>Karena dunia butuh lebih banyak Builder, bukan hanya Coder.</p>
+<p><strong>#BuilderMindset #NoCodeMovement
+#SolutionOverSyntax</strong></p>
+<hr />
+<h2 id="bonus-quick-reference">📚 BONUS: QUICK REFERENCE</h2>
+<p><strong>CRUD Cheat Sheet:</strong></p>
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">// CREATE</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>sheet<span class="op">.</span><span class="fu">appendRow</span>([id<span class="op">,</span> name<span class="op">,</span> value<span class="op">,</span> timestamp])<span class="op">;</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="co">// READ</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> data <span class="op">=</span> sheet<span class="op">.</span><span class="fu">getDataRange</span>()<span class="op">.</span><span class="fu">getValues</span>()<span class="op">;</span></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="co">// UPDATE</span></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>sheet<span class="op">.</span><span class="fu">getRange</span>(row<span class="op">,</span> col)<span class="op">.</span><span class="fu">setValue</span>(newValue)<span class="op">;</span></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a><span class="co">// DELETE</span></span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>sheet<span class="op">.</span><span class="fu">deleteRow</span>(rowNumber)<span class="op">;</span></span></code></pre></div>
+<p><strong>Fetch API Cheat Sheet:</strong></p>
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(API_URL<span class="op">,</span> {</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;POST&#39;</span><span class="op">,</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">body</span><span class="op">:</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>({ <span class="dt">action</span><span class="op">:</span> <span class="st">&#39;getData&#39;</span><span class="op">,</span> <span class="op">...</span>params })</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> result <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span></code></pre></div>
+<p><strong>Deployment Commands:</strong></p>
+<div class="sourceCode" id="cb50"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Netlify CLI</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> netlify-cli</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="ex">netlify</span> deploy <span class="at">--prod</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Surge</span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> surge</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> public <span class="kw">&amp;&amp;</span> <span class="ex">surge</span></span></code></pre></div>
+<p><strong>Google Sheets Shortcuts:</strong> - Ctrl+S: Save - Ctrl+Z:
+Undo - Ctrl+Shift+V: Paste values only - View → Freeze → 1 row</p>
+<hr />
+<p><strong>END OF DRAFT</strong></p>
+<p>Total Pages: ~250-300 pages (estimate)<br />
+Total Words: ~50,000 words<br />
+Reading Time: ~8 hours<br />
+Build Time (follow all exercises): ~30 hours</p>
+<p><strong>Format:</strong> PDF, ePub, Kindle<br />
+<strong>Price:</strong> $19-29 (self-published)<br />
+<strong>Target:</strong> Non-technical business owners, UMKM, aspiring
+entrepreneurs</p>
